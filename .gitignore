@@ -3,6 +3,11 @@
 # IDEA
 .idea
 # Python
+__pycache__
 *.pyc
 # VirtualEnv
 venv
+# Celery
+celerybeat-schedule.db
+# Logs
+logs/*.log

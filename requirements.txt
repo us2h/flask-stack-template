@@ -1,2 +1,6 @@
 # Flask framework
 Flask==2.1.1
+# Celery
+celery==5.2.6
+# Redis
+redis==4.2.2
