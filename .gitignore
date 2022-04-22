@@ -1,0 +1,8 @@
+# MACOS
+.DS_Store
+# IDEA
+.idea
+# Python
+*.pyc
+# VirtualEnv
+venv
