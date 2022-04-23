@@ -1,0 +1,27 @@
+version: '3.7'
+
+services:
+  my_project:
+    build: .
+    restart: unless-stopped
+    volumes:
+      - ./logs:/app/logs
+    env_file:
+      - ./.env
+    ports:
+      - "80:80"
+
+  tasks:
+    build: .
+    restart: unless-stopped
+    volumes:
+      - ./logs:/app/logs
+    env_file:
+      - ./.env
+    command: celery -A scheduler worker -B
+
+  redis:
+    image: redis:alpine
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
