@@ -9,7 +9,7 @@ APP_CONFIG = {
 
     # Flask config
     'FLASK_HOST': '0.0.0.0',
-    'FLASK_PORT': 5000,
+    'FLASK_PORT': 80,
     'FLASK_DEBUG': False,
 
     # Scheduler config
@@ -18,7 +18,7 @@ APP_CONFIG = {
     'TASK_SCHEDULED_MINUTE': 0,
 
     # Celery config
-    'CELERY_BROKER_REDIS_HOST': 'localhost',
+    'CELERY_BROKER_REDIS_HOST': 'redis',
     'CELERY_BROKER_REDIS_PORT': 6379,
     'CELERY_BROKER_REDIS_DATABASE': 0,
 }
