@@ -1,4 +1,5 @@
 # Flask bootstrap project
+You could use this template to easy and fast start new project for API, Web, tasks, etc without configuration some basic things like logging, celery tasks, endpoints routing, web templates configuration etc.
 
 ## Features:
 
